@@ -4,7 +4,7 @@
   top: 60px;
   left: 50%;
   transform: translateX(-50%);
-  width: calc(100% - 369px);
+  width: 1260px;
   border-radius: 15px;
   z-index: 999;
   display: flex;
@@ -51,9 +51,10 @@
 /* Responsive Design */
 .nav-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   align-items: center;
+  margin-left: 10rem;
 }
 
 .menu-toggle {
@@ -91,7 +92,7 @@
   .nav-container {
     position: fixed;
     top: 0;
-    /*right: -100%;*/
+    right: -100%;
     width: 200px;
     flex-direction: column;
     padding: 80px 20px 20px;

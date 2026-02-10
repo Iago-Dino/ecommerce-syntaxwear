@@ -2,7 +2,7 @@
 .card {
   background-size: cover;
   background-position: center;
-  
+
   border-radius: 20px;
   position: relative;
   overflow: hidden;
@@ -10,17 +10,16 @@
 
 .highlight {
   grid-area: highlight;
-  background-image: url(../../imagens/products/modelo-masculino.jpg);
-  background-position: 15% center;
+  background-image: url(../../imagens/products/card_imagem.jpg);
 }
 
-.highlight-content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: inherit;
-    text-align: center;
+.highlight-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: inherit;
+  text-align: center;
 }
 
 .top2 {
@@ -59,22 +58,49 @@
   gap: 30px;
 }
 
-
 .card-subtitle {
   font-size: 1.25rem;
-  color: #EDEDED;
+  color: #ededed;
   font-weight: 400;
   margin-bottom: 10px;
 }
 
-.card-title{
-    font-size: 1.5rem;
-    color: #EDEDED;
-    font-weight: 400;
-    margin-bottom: 20px;
+.card-title {
+  font-size: 1.5rem;
+  color: #ededed;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 
-.cta-group{
-    display: flex;
-    gap: 10px;
+.cta-group {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .grid-section {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 300px);
+    grid-template-areas:
+      "highlight highlight"
+      "bottomL bottomL"
+      "model midR"
+      "model bottomR"
+      "top2 top2";
+    max-width: 100%;
+    gap: 0.625rem;
+  }
+
+  .highlight {
+    min-height: 300px;
+  }
+
+  .model {
+    min-height: 100px;
+    background-position: 37% center;
+  }
+
+  .top2 .bottomL {
+    min-height: 190px;
+  }
 }
