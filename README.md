@@ -43,6 +43,9 @@ ecommerce-syntaxwear/
                                 # talvez para futuras imagens de produtos)
 ```
 
+## Link para visualizar a pagina do projeto
+https://iago-dino.github.io/ecommerce-syntaxwear/
+
 ## Como Visualizar o Projeto
 
 Para visualizar este projeto no seu navegador, siga os passos abaixo:
