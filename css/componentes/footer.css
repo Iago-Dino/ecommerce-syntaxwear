@@ -85,13 +85,12 @@
 }
 
 
-@media (max-width: 100px) {
+@media (max-width: 1000px) {
   .footer-content {
     flex-direction: column;
     gap: 2rem;
     padding: 2rem 1rem;
-    align-items: center;
-    text-align: center;
+
   }
 
   .footer-nav ul{

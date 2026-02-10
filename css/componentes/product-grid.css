@@ -80,7 +80,7 @@
 @media (max-width: 768px) {
   .grid-section {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 300px);
+    grid-template-rows: repeat(5, auto);
     grid-template-areas:
       "highlight highlight"
       "bottomL bottomL"
@@ -92,15 +92,14 @@
   }
 
   .highlight {
-    min-height: 300px;
+    min-height: 500px;
   }
 
   .model {
-    min-height: 100px;
-    background-position: 37% center;
+    min-height: 370px;
   }
 
-  .top2 .bottomL {
-    min-height: 190px;
+  .top2, .bottomL {
+    min-height: 200px;
   }
 }
