@@ -55,7 +55,7 @@
   background-position: center;
 }
 
-@media (maxwidth:500px){
+@media (max-width: 1000px){
   .category-card {
     width: 100%;
   }
